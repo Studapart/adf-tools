@@ -1,18 +1,41 @@
-# adf-tools [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Atlassian%20Document%20Format%20PHP%20Tools.&url=https://github.com/DamienHarper/adf-tools&hashtags=adf-tools)
+# adf-tools (Studapart fork)
 
-[![Latest Stable Version](https://poser.pugx.org/damienharper/adf-tools/v/stable)](https://packagist.org/packages/damienharper/adf-tools)
-[![Latest Unstable Version](https://poser.pugx.org/damienharper/adf-tools/v/unstable)](https://packagist.org/packages/damienharper/adf-tools)
-[![adf-tools CI](https://github.com/DamienHarper/adf-tools/actions/workflows/ci-1.x.yml/badge.svg)](https://github.com/DamienHarper/adf-tools/actions/workflows/ci-1.x.yml)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/DamienHarper/adf-tools/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/DamienHarper/adf-tools/?branch=main)
-[![codecov](https://codecov.io/gh/DamienHarper/adf-tools/branch/main/graph/badge.svg)](https://app.codecov.io/gh/DamienHarper/adf-tools/branch/main)
-[![License](https://poser.pugx.org/damienharper/adf-tools/license)](https://packagist.org/packages/damienharper/adf-tools)
-[![Total Downloads](https://poser.pugx.org/damienharper/adf-tools/downloads)](https://packagist.org/packages/damienharper/adf-tools)
-[![Monthly Downloads](https://poser.pugx.org/damienharper/adf-tools/d/monthly)](https://packagist.org/packages/damienharper/adf-tools)
-[![Daily Downloads](https://poser.pugx.org/damienharper/adf-tools/d/daily)](https://packagist.org/packages/damienharper/adf-tools)
+Studapart-maintained fork of [DamienHarper/adf-tools](https://github.com/DamienHarper/adf-tools) **1.2.1**.
+Public PHP API stays `DH\Adf\` so existing converters keep working.
+
+[![Latest Stable Version](https://poser.pugx.org/studapart/adf-tools/v/stable)](https://packagist.org/packages/studapart/adf-tools)
+[![adf-tools CI](https://github.com/Studapart/adf-tools/actions/workflows/ci-1.x.yml/badge.svg)](https://github.com/Studapart/adf-tools/actions/workflows/ci-1.x.yml)
+[![License](https://poser.pugx.org/studapart/adf-tools/license)](https://packagist.org/packages/studapart/adf-tools)
 
 Atlassian Document Format PHP Tools
 
 The purpose of `adf-tools` is to provide an easy way to build, parse and export documents based on Atlassian Document Format.
+
+## Installation
+
+Once the package is on Packagist:
+
+```bash
+composer require studapart/adf-tools:^1.2.2
+```
+
+Until Packagist publish, consume the GitHub VCS repository:
+
+```json
+{
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/Studapart/adf-tools.git"
+    }
+  ],
+  "require": {
+    "studapart/adf-tools": "^1.2.2"
+  }
+}
+```
+
+`composer.json` includes `"replace": { "damienharper/adf-tools": "self.version" }` so a later switch from upstream does not install two copies.
 
 ## Documentation
 - Documentation of this library can be found [here](doc/index.md).
@@ -21,11 +44,13 @@ The purpose of `adf-tools` is to provide an easy way to build, parse and export 
 
 
 ## Version Information
-| Version | Status                      | Requirements | Badges                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|:--------|:----------------------------|:-------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.x     | Active development :rocket: | PHP >= 7.4   | [![adf-tools 1.x CI](https://github.com/DamienHarper/adf-tools/actions/workflows/ci-1.x.yml/badge.svg)](https://github.com/DamienHarper/adf-tools/actions/workflows/ci-1.x.yml) <br/>[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/DamienHarper/adf-tools/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/DamienHarper/adf-tools/?branch=main) <br/>[![codecov](https://codecov.io/gh/DamienHarper/adf-tools/branch/main/graph/badge.svg)](https://app.codecov.io/gh/DamienHarper/adf-tools/branch/main) |
+| Version | Status                      | Requirements | Badges                                                                                                                                                                                                                                                                                                                                 |
+|:--------|:----------------------------|:-------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1.x     | Active development :rocket: | PHP >= 7.4   | [![adf-tools 1.x CI](https://github.com/Studapart/adf-tools/actions/workflows/ci-1.x.yml/badge.svg)](https://github.com/Studapart/adf-tools/actions/workflows/ci-1.x.yml) |
 
-Changelog is available [here](https://github.com/DamienHarper/adf-tools/releases)
+CI for this line runs on **PHP 8.4**. Production Composer constraint remains `php: >=7.4`.
+
+Changelog: [CHANGELOG.md](CHANGELOG.md) and [GitHub releases](https://github.com/Studapart/adf-tools/releases).
 
 
 ## Contributing
@@ -37,9 +62,12 @@ To do so, follow instructions in this dedicated [README](doc/contributing.md)
 
 
 ## Credits
-- Thanks to [all contributors](https://github.com/DamienHarper/adf-tools/graphs/contributors)
+- Original author: [Damien Harper](https://github.com/DamienHarper) (`DamienHarper/adf-tools`)
+- Maintained by [Studapart](https://github.com/Studapart)
+- Thanks to [all contributors](https://github.com/Studapart/adf-tools/graphs/contributors)
 - Special thanks to [JetBrains](https://www.jetbrains.com/?from=adf-tools) for their *Licenses for Open Source Development*
 
 
 ## License
-`adf-tools` is free to use and is licensed under the [MIT license](http://www.opensource.org/licenses/mit-license.php)
+`adf-tools` is free to use and is licensed under the [MIT license](LICENSE).
+Damien Harper's copyright from upstream 1.2.1 is preserved.

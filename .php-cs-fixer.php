@@ -8,11 +8,11 @@ $config
     ->setRules([
         '@PhpCsFixer' => true,
         '@PhpCsFixer:risky' => true,
-        '@PHP74Migration:risky' => true,
+        '@PHP7x4Migration:risky' => true,
 //        '@PHP80Migration' => true,
 //        '@PHP80Migration:risky' => true,
         '@DoctrineAnnotation' => true,
-        '@PHPUnit84Migration:risky' => true,
+        '@PHPUnit8x4Migration:risky' => true,
         'date_time_immutable' => true,
         'final_public_method_for_abstract_class' => false,
         'general_phpdoc_annotation_remove' => [
@@ -25,7 +25,7 @@ $config
         'global_namespace_import' => true,
         'linebreak_after_opening_tag' => true,
         'list_syntax' => ['syntax' => 'short'],
-        'mb_str_functions' => true,
+        'mb_str_functions' => false,
         'method_chaining_indentation' => true,
         'nullable_type_declaration_for_default_null_value' => true,
         'ordered_interfaces' => true,

@@ -1,15 +1,27 @@
 {
-  "name": "damienharper/adf-tools",
-  "description": "Atlassian Document Format PHP Tools",
+  "name": "studapart/adf-tools",
+  "description": "Atlassian Document Format PHP Tools (Studapart fork of DamienHarper/adf-tools 1.2.1)",
   "minimum-stability": "stable",
   "keywords": ["atlassian", "adf"],
   "license": "MIT",
+  "homepage": "https://github.com/Studapart/adf-tools",
   "authors": [
     {
       "name": "Damien Harper",
       "email": "damien.harper@gmail.com"
+    },
+    {
+      "name": "Studapart",
+      "homepage": "https://github.com/Studapart"
     }
   ],
+  "support": {
+    "issues": "https://github.com/Studapart/adf-tools/issues",
+    "source": "https://github.com/Studapart/adf-tools"
+  },
+  "replace": {
+    "damienharper/adf-tools": "self.version"
+  },
   "require": {
     "php": ">=7.4",
     "ext-json": "*"
@@ -25,8 +37,8 @@
     }
   },
   "require-dev": {
-    "phpunit/phpunit": "^9.0",
-    "symfony/var-dumper": "^5.0|^6.0"
+    "phpunit/phpunit": "^11.0",
+    "symfony/var-dumper": "^5.0 || ^6.0 || ^7.0 || ^8.0"
   },
   "scripts": {
     "test": "php -d pcov.enabled=1 ./vendor/bin/phpunit --colors=always",

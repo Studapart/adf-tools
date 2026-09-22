@@ -1,5 +1,6 @@
 # Contributing
 
+This repository is the Studapart-maintained fork of DamienHarper/adf-tools 1.2.1.
 Contribution are always welcome and much appreciated!
 
 Before starting to contribute, you first need to install dev dependencies:

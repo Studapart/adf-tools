@@ -4,8 +4,10 @@
 Open a command console, enter your project directory and execute:
 
 ```bash
-composer require damienharper/adf-tools
+composer require studapart/adf-tools:^1.2.2
 ```
+
+Until Packagist publish, add a VCS repository pointing at `https://github.com/Studapart/adf-tools.git`. See the [README](../README.md) for the full snippet.
 
 ## Usage
 An ADF document is a collection (tree structure) of nodes which can be of several types:
